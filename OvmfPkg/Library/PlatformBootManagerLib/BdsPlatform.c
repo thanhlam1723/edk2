@@ -27,7 +27,10 @@ EFI_EVENT  mEfiDevPathEvent;
 VOID       *mEmuVariableEventReg;
 EFI_EVENT  mEmuVariableEvent;
 UINT16     mHostBridgeDevId;
-
+STATIC EFI_GUID  mBootTimeAppFileGuid = {
+  0xA3D7E6F2, 0x6CF0, 0x4B0B,
+  { 0xA5, 0x3A, 0x9E, 0x31, 0x86, 0xA0, 0x24, 0x71 }
+};
 //
 // Table of host IRQs matching PCI IRQs A-D
 // (for configuring PCI Interrupt Line register)
@@ -246,7 +249,7 @@ PlatformBootManagerBeforeConsole (
   //
   EfiEventGroupSignal (&gEfiEndOfDxeEventGroupGuid);
 
-  if (PcdGetBool (PcdAcpiS3Enable)) {
+  if ( PcdGetBool (PcdAcpiS3Enable)) {
     //
     // Save the boot script too. Note that this will require us to emit the
     // DxeSmmReadyToLock event just below, which in turn locks down SMM.
@@ -1696,7 +1699,15 @@ PlatformBootManagerAfterConsole (
     LOAD_OPTION_ACTIVE | LOAD_OPTION_CATEGORY_APP,
     ShellEnabled
     );
-
+ //
+// Register Boot Time Measurement application
+//
+PlatformRegisterFvBootOption (
+  &mBootTimeAppFileGuid,
+  L"Boot Time Measurement",
+  LOAD_OPTION_ACTIVE | LOAD_OPTION_CATEGORY_APP,
+  TRUE
+  );
   //
   // Register Grub
   //

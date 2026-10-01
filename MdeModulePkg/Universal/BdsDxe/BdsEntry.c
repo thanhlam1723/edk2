@@ -1056,7 +1056,10 @@ BdsEntry (
       ProcessLoadOptions (LoadOptions, LoadOptionCount);
       EfiBootManagerFreeLoadOptions (LoadOptions, LoadOptionCount);
     }
-
+// Record the end point used by BootTime Measurement.
+    // This point is before firmware starts waiting for user input.
+    //
+    PERF_CROSSMODULE_END ("BDS_BOOTMENU");
     //
     // Execute Key####
     //

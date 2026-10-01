@@ -28,14 +28,10 @@ ReadBootCount (
 
 STATIC
 EFI_STATUS
-ResetBootCount (
-  VOID
-  )
+ResetBootCount (VOID)
 {
   UINT32  BootCount;
-
   BootCount = 0;
-
   return gRT->SetVariable (
                 BOOT_COUNT_VARIABLE_NAME,
                 &gMyBootTrackerGuid,
@@ -64,9 +60,8 @@ UefiMain (
   while (TRUE) {
     SystemTable->ConOut->ClearScreen (SystemTable->ConOut);
 
-    Print (L"====================================\r\n");
+  
     Print (L"          UEFI Boot Tracker\r\n");
-    Print (L"====================================\r\n");
 
     Status = ReadBootCount (&BootCount);
 

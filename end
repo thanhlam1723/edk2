@@ -1,0 +1,45 @@
+[35mArmPkg/ArmPkg.dsc[m[36m:[m[32m145[m[36m:[m  ArmPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mArmPkg/Library/LinuxBootBootManagerLib/LinuxBootBootManagerLib.inf[m[36m:[m[32m2[m[36m:[m#  Implementation for [1;31mPlatformBootManagerLib[m library class interfaces.
+[35mArmPkg/Library/LinuxBootBootManagerLib/LinuxBootBootManagerLib.inf[m[36m:[m[32m20[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m2[m[36m:[m#  Implementation for [1;31mPlatformBootManagerLib[m library class interfaces.
+[35mArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m15[m[36m:[m  BASE_NAME                      = [1;31mPlatformBootManagerLib[m
+[35mArmPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m19[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mArmVirtPkg/ArmVirtCloudHv.dsc[m[36m:[m[32m42[m[36m:[m  [1;31mPlatformBootManagerLib[m|ArmPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mArmVirtPkg/ArmVirtKvmTool.dsc[m[36m:[m[32m53[m[36m:[m  [1;31mPlatformBootManagerLib[m|ArmPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mArmVirtPkg/ArmVirtQemu.dsc[m[36m:[m[32m72[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[mLight/[1;31mPlatformBootManagerLib[m.inf
+[35mArmVirtPkg/ArmVirtQemuKernel.dsc[m[36m:[m[32m69[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[mLight/[1;31mPlatformBootManagerLib[m.inf
+[35mArmVirtPkg/ArmVirtXen.dsc[m[36m:[m[32m49[m[36m:[m  [1;31mPlatformBootManagerLib[m|ArmPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mEmulatorPkg/EmulatorPkg.dsc[m[36m:[m[32m131[m[36m:[m  [1;31mPlatformBootManagerLib[m|EmulatorPkg/Library/PlatformBmLib/PlatformBmLib.inf
+[35mEmulatorPkg/Library/PlatformBmLib/PlatformBmLib.inf[m[36m:[m[32m19[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mMdeModulePkg/Library/BootLogoLib/BootLogoLib.inf[m[36m:[m[32m2[m[36m:[m#  This library is only intended to be used by [1;31mPlatformBootManagerLib[m
+[35mMdeModulePkg/Library/PlatformBootManagerLibNull/PlatformBootManagerLibNull.inf[m[36m:[m[32m11[m[36m:[m  BASE_NAME                      = [1;31mPlatformBootManagerLib[m
+[35mMdeModulePkg/Library/PlatformBootManagerLibNull/PlatformBootManagerLibNull.inf[m[36m:[m[32m12[m[36m:[m  MODULE_UNI_FILE                = [1;31mPlatformBootManagerLib[mNull.uni
+[35mMdeModulePkg/Library/PlatformBootManagerLibNull/PlatformBootManagerLibNull.inf[m[36m:[m[32m16[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mMdeModulePkg/MdeModulePkg.dsc[m[36m:[m[32m93[m[36m:[m  [1;31mPlatformBootManagerLib[m|MdeModulePkg/Library/[1;31mPlatformBootManagerLib[mNull/[1;31mPlatformBootManagerLib[mNull.inf
+[35mMdeModulePkg/MdeModulePkg.dsc[m[36m:[m[32m324[m[36m:[m  MdeModulePkg/Library/[1;31mPlatformBootManagerLib[mNull/[1;31mPlatformBootManagerLib[mNull.inf
+[35mMdeModulePkg/Universal/BdsDxe/BdsDxe.inf[m[36m:[m[32m54[m[36m:[m  [1;31mPlatformBootManagerLib[m
+[35mOvmfPkg/AmdSev/AmdSevX64.dsc[m[36m:[m[32m368[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/Bhyve/BhyveX64.dsc[m[36m:[m[32m390[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[mBhyve/[1;31mPlatformBootManagerLib[mBhyve.inf
+[35mOvmfPkg/CloudHv/CloudHvX64.dsc[m[36m:[m[32m398[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/IntelTdx/IntelTdxX64.dsc[m[36m:[m[32m320[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/Library/PlatformBmPrintScLib/PlatformBmPrintScLib.inf[m[36m:[m[32m11[m[36m:[m# library instance into BdsDxe via [1;31mPlatformBootManagerLib[m (which BdsDxe depends
+[35mOvmfPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m11[m[36m:[m  BASE_NAME                      = [1;31mPlatformBootManagerLib[m
+[35mOvmfPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m15[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mOvmfPkg/Library/PlatformBootManagerLibBhyve/PlatformBootManagerLibBhyve.inf[m[36m:[m[32m13[m[36m:[m  BASE_NAME                      = [1;31mPlatformBootManagerLib[mBhyve
+[35mOvmfPkg/Library/PlatformBootManagerLibBhyve/PlatformBootManagerLibBhyve.inf[m[36m:[m[32m17[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mOvmfPkg/Library/PlatformBootManagerLibLight/PlatformBootManagerLib.inf[m[36m:[m[32m2[m[36m:[m#  Implementation for [1;31mPlatformBootManagerLib[m library class interfaces.
+[35mOvmfPkg/Library/PlatformBootManagerLibLight/PlatformBootManagerLib.inf[m[36m:[m[32m14[m[36m:[m  BASE_NAME                      = [1;31mPlatformBootManagerLib[m
+[35mOvmfPkg/Library/PlatformBootManagerLibLight/PlatformBootManagerLib.inf[m[36m:[m[32m18[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mOvmfPkg/LoongArchVirt/LoongArchVirtQemu.dsc[m[36m:[m[32m211[m[36m:[m  [1;31mPlatformBootManagerLib[m           | OvmfPkg/Library/[1;31mPlatformBootManagerLib[mLight/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/Microvm/MicrovmX64.dsc[m[36m:[m[32m409[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/OvmfPkgIa32X64.dsc[m[36m:[m[32m408[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/OvmfPkgX64.dsc[m[36m:[m[32m449[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/OvmfXen.dsc[m[36m:[m[32m335[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/RiscVVirt/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m2[m[36m:[m#  Implementation for [1;31mPlatformBootManagerLib[m library class interfaces for RISC-V.
+[35mOvmfPkg/RiscVVirt/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m12[m[36m:[m  BASE_NAME                      = DxeRiscV64[1;31mPlatformBootManagerLib[m
+[35mOvmfPkg/RiscVVirt/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m16[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mOvmfPkg/RiscVVirt/RiscVVirt.dsc.inc[m[36m:[m[32m84[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/RiscVVirt/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mOvmfPkg/RiscVVirt/RiscVVirtQemu.dsc[m[36m:[m[32m123[m[36m:[m  [1;31mPlatformBootManagerLib[m|OvmfPkg/RiscVVirt/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
+[35mUefiPayloadPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m11[m[36m:[m  BASE_NAME                      = [1;31mPlatformBootManagerLib[m
+[35mUefiPayloadPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf[m[36m:[m[32m15[m[36m:[m  LIBRARY_CLASS                  = [1;31mPlatformBootManagerLib[m|DXE_DRIVER
+[35mUefiPayloadPkg/UefiPayloadPkg.dsc[m[36m:[m[32m334[m[36m:[m  [1;31mPlatformBootManagerLib[m|UefiPayloadPkg/Library/[1;31mPlatformBootManagerLib[m/[1;31mPlatformBootManagerLib[m.inf
